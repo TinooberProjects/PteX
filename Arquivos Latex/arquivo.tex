@@ -1,0 +1,140 @@
+
+    
+    %%%%%%  CABECALHO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\documentclass[
+% -- opções da classe memoir --
+12 pt,				% tamanho da fonte
+openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+%twoside,			% para impressão em verso e anverso. Oposto a oneside
+oneside,
+a4paper,			% tamanho do papel. 
+% -- opções da classe abntex2 --
+chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+%	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+%	subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+%	subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+% -- opções do pacote babel --
+english,			% idioma adicional para hifenização
+brazil	               % o último idioma é o principal do documento
+]{abntex2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{ptex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFIGURAÇÃO DOS DADOS  DO TRABALHO
+     \titulo{}
+\autor{}
+\local{}
+\data{}
+\orientador{}
+\aprovadoem{}
+\instituicao{}
+\curso{}
+
+\palavrachaveum{Palavra chave1 }
+\palavrachavedois{Palavra chave2 }
+\palavrachavetres{Palavra chave3 }
+\tipotrabalho{Monografia}
+
+
+\nomebancaum{TEste}
+\titulobancaum{Mestre em Educação}
+\bancauminstituicao{Instituto Federal de Ciência e e e ee}
+
+
+\nomebancadois{TEste}
+\titulobancadois{Mestre em Educação}
+\bancadoisinstituicao{Instituto Federal de Ciência e e e ee}
+
+
+\nomebancatres{TEste}
+\titulobancatres{Mestre em Educação}
+\bancatresinstituicao{Instituto Federal de Ciência e e e ee}
+
+
+
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+
+\preambulo{Trabalho apresentado como requisito parcial para obtenção do título de
+Licenciado em Computação  pelo Instituto Federal de Educação Ciência e Tecnologia da Bahia, \italico{campus} Santo Amaro, sob
+orientação da Profa. \imprimirorientador . }
+
+% Espaçamentos entre linhas e parágrafos 
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.5cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+
+%%%%%%%%%%% INDICE REMISSIVO
+
+\informacoespdf
+
+%%%%%%%%%%%% Início do Documento
+\inicio
+
+
+\pretextual
+\capaifba
+
+\folhaderostoifba
+
+\folhadeaprovacaoifba
+
+
+\imprimirdedicatoria{ a testes de ddfsfsdf dsf sdflksdfçksdmf  dkfjsdçfj kjsdf  sfçj }
+
+\listoffigures*
+\sumario
+\textual
+
+
+\nomefigura{dart.png}
+\descricaoimagem{Imagem Dart}
+\apelidoimagem{teste}
+\legendaimagem{Criado por Everton}
+\inserirfigura
+
+Hoje
+
+\nomefiguradois{dart.png}
+\descricaoimagem{Nova imagem}
+\apelidoimagem{Teste2}
+\legendaimagem{Nova legenda}
+
+\inserirfiguras
+Agora
+
+
+\apontarImagem{teste}
+
+\descricaoimagemtres{Um}
+\descricaoimagemdois{dois}
+\legendaimagem{Nova fonte}
+
+\apelidoimagemum{Figura1}
+
+\subfiguras
+
+
+\apontarImagem{Figura1}
+
+\arquivo{bibliografia}
+
+\referencias{REFERÊNCIAS}
+
+\bibliografia
+
+
+
+\fim
+
+
+
